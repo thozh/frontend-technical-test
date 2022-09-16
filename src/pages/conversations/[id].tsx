@@ -9,9 +9,7 @@ import MessageInput from "../../components/Message/MessageInput";
 import UserMessage from "../../components/Message/UserMessage";
 import { getLoggedUserId } from "../../utils/getLoggedUserId";
 
-interface OneToOneChatProps {}
-
-const OneToOneChat: FC<OneToOneChatProps> = () => {
+const OneToOneChat: FC = () => {
   const router = useRouter();
   const conversationId = router.query.id as string;
   const userId = getLoggedUserId();
